@@ -47,7 +47,7 @@ headerStyle.replaceSync(/*CSS*/`
 const template = document.createElement ('template')
 template.innerHTML = /*HTML*/`
 <header>
-    <img logo-header src="assets/images/549675846_18094174126680521_6691683239864828988_n.jpg" alt="">
+    <img logo-header src="assets/images/logo-servitec.jpg" alt="">
     <div id="container-cart-icon">
     <img id="header-cart-icon" src="assets/icons/cart-shopping-svgrepo-com.svg" alt="">
     <span id="header-red-counter">
