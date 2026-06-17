@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Template via Webcomponent-->
+
+    <script type="module" src="js/components/header.js" defer></script>
+    <script type="module" src="js/components/footer.js" defer></script>
+
+</head>
+
+<body>
+
+    <component-header></component-header>
+
+    <nav>
+        <a class="nav-link" href="">Painéis</a>
+        <a class="nav-link" href="">[Place Holder]</a>
+        <a class="nav-link" href="">[Place Holder]</a>
+        <a class="nav-link" href="">[Place Holder]</a>
+
+    </nav>
+
+    <div id="background-img-container">
+        <img id="background-img" src="assets/images/background.webp" alt="">
+        <div id="background-img-overlay">
+            <p id="text-overlay">A Maior Empresa de Instalação Fotovoltaica Da Região dos Lagos</p>
+        </div>
+    </div>
+
+    <div id="container-main">
+        <aside>
+
+            <ul>
+
+                <li id="tab-opcoes-compra">
+                    Opções de Compra
+                    <span>| V</span>
+                </li>
+
+                <li id="tab-opcoes-compra">
+                    Categoria
+                    <span>| V</span>
+                </li>
+
+                <li id="tab-opcoes-compra">
+                    Marca
+                    <span>| V</span>
+                </li>
+
+                <li id="tab-opcoes-compra">
+                    Preço
+                    <span>| V</span>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <div id="lista-kits-main">
+
+            <div class="lista-kits-cards">
+                <span><img class="imagem-produto" src="assets/images/images.jpg" alt=""></span>
+                <div class="coluna-desc ">
+                <div class="produto-titulo">Placa Solar Teste</div> 
+                <div class="produto-desc">O Painel Solar de 710W da marca Teste 
+                    possui 132 células de silício monocristalino, pode gerar até 
+                    2800Wh/dia. Garantia de 15 anos (já incluindo os 90 dias da garantia legal) 
+                    contra defeito de fabricação e garantia linear de produção de 30 anos.
+                </div>
+                <div class="produto-promo"></div>
+                </div>
+                <span>
+                    <div class="produto-info">
+                        <p>809,90</p>
+
+                        <button class="carrinho-teste" onclick="carrinhoTeste()">Comprar</button> 
+
+
+                    </div>
+                </span>          
+
+            </div>
+        
+        <div class="lista-kits-cards">
+                <span><img class="imagem-produto" src="assets/images/images.jpg" alt=""></span>
+                <div class="coluna-desc ">
+                <div class="produto-titulo">Placa Solar Teste</div> 
+                <div class="produto-desc">O Painel Solar de 710W da marca Teste 
+                    possui 132 células de silício monocristalino, pode gerar até 
+                    2800Wh/dia. Garantia de 15 anos (já incluindo os 90 dias da garantia legal) 
+                    contra defeito de fabricação e garantia linear de produção de 30 anos.
+                </div>
+                <div class="produto-promo"></div>
+                </div>
+                <span>
+                    <div class="produto-info">
+                        <p>809,90</p>
+
+                        <button class="carrinho-teste" onclick="carrinhoTeste()">Comprar</button> 
+
+
+                    </div>
+                </span>          
+
+            </div>
+
+        <div class="lista-kits-cards">
+                <span><img class="imagem-produto" src="assets/images/images.jpg" alt=""></span>
+                <div class="coluna-desc ">
+                <div class="produto-titulo">Placa Solar Teste</div> 
+                <div class="produto-desc">O Painel Solar de 710W da marca Teste 
+                    possui 132 células de silício monocristalino, pode gerar até 
+                    2800Wh/dia. Garantia de 15 anos (já incluindo os 90 dias da garantia legal) 
+                    contra defeito de fabricação e garantia linear de produção de 30 anos.
+                </div>
+                <div class="produto-promo"></div>
+                </div>
+                <span>
+                    <div class="produto-info">
+                        <p>809,90</p>
+
+                        <button class="carrinho-teste" onclick="carrinhoTeste()">Comprar</button> 
+
+
+                    </div>
+                </span>          
+
+            </div>
+
+        </div>
+        <aside>
+    
+        </aside>
+
+    </div>
+
+    <component-footer></component-footer>
+
+</body>
+
+
+<script>
+
+    counter = 0
+
+
+    function carrinhoTeste() {
+        if (counter >= 9 || counter == "+9") {
+            counter = "+9";
+        } else {
+            counter += 1
+        }
+        document.getElementById('header-counter').textContent = counter
+
+    }
+
+
+        
+
+
+
+</script>
+
+</html> 
