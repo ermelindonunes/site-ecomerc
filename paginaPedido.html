@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel ="stylesheet" href="/paginaPedido.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/549675846_18094174126680521_6691683239864828988_n.jpg" alt="">
+        <div id="container-cart-icon">
+            <img id="header-cart-icon" src="img/cart-shopping-svgrepo-com.svg" alt="">
+            <span id="header-red-counter">
+                <p id="header-counter">1</p>
+            </span>
+
+
+        </div>
+    </header>
+
+        <div id="container-main-paginaPedido">
+            <form onsubmit="enviarForm()">
+                <label for="form-pedido-nome">Nome:</label> 
+                <input type="text"name="form-pedido-nome" id="form-pedido-nome">
+                <br>
+                <label for="form-pedido-nome">Email:</label> 
+                <input type="text"name="form-pedido-email" id="form-pedido-email">
+                <br>
+                <label for="form-pedido-nome">Telefone de contato</label> 
+                <input type="tel"name="form-pedido-telefone" id="form-pedido-telefone">
+                <br>
+                <label for="orm-pedido-descpedido">Descreva seu pedido aqui</label>
+                <textarea name="" id="orm-pedido-descpedido"></textarea>
+                <br>
+                <input type="submit"value="Enviar">
+            </form>
+
+        </div>
+
+
+    <footer>
+
+        <img id="footer-logo" src="img/549675846_18094174126680521_6691683239864828988_n.jpg" alt="">
+
+    </footer>
+
+
+</body>
+
+<script>
+    function enviarForm(){
+        alert(`NFORMAÇÕES DO FORMULÁRIO: \nNOME: ${document.getElementById('form-pedido-nome').value} \n EMAIL: ${document.getElementById('form-pedido-email').value} \nTELEFONE: ${document.getElementById('form-pedido-telefone')} \nDESCRIÇÃO DO PEDIDO ${document.getElementById('form-pedido-telefone')}`)
+    }s
+
+</script>
+
+</html>

@@ -2,25 +2,21 @@
 
 ## Motivação do Projeto
 
-O projeto está sendo desenvolvido para a matéria de Desenv. Web em Html5, Css, Javascript e PhP (ARA0062) com o professor Rodrigo Sena.
+O projeto está sendo desenvolvido para a matéria de Desenvolvimento Web em HTML5, CSS, JavaScript e PHP (ARA0062), com o professor Rodrigo Sena.
 
 ## Sobre o Projeto
 
-O projeto será envolta de um website e-commerce para a empresa de instalação de energia Elétrica Servitec, sendo ela a parte interessada.
+O projeto consiste em um website de e-commerce para a empresa Servitec, voltada para instalação de energia elétrica.
 
-A atividade pelo o que eu entendi é uma página responsiva em HTML, JavaScript e CSS. Utilizando um banco de dados e PHP como nosso backend.
+A proposta é desenvolver uma página responsiva utilizando HTML5, CSS, JavaScript, PHP e banco de dados MySQL.
 
-Planejo ter o site principal, com um carrinho que levará para um formulário de intenção de compra(preços podem variar dependendo do tipo de financiamento de cada pessoa). As informações desse formulário caem no banco de dados e o envio é feito 
+O sistema terá página principal, carrinho de compras, formulário de intenção de compra, login de usuário e área administrativa para cadastro, edição e remoção de produtos.
 
-O banco de dados vai alimentar o conteúdo da página, com preços podendo ser alterados vira um CRUD, bem como a adição e remoção de itens. (Templates via web components)
+## Techstack
 
-## Techstack 
+A tecnologia utilizada será baseada em LAMP:
 
-A techstack utilizada vai ser a LAMP, que significa:
-
-L A M P\
-│ │ │ │\
-│ │ │ └─ PHP\
-│ │ └─── MySQL\
-│ └───── Apache Web Server\
-└─────── Linux (VPS rodando Debian 13 e uma instância do Podman)\
+- Linux
+- Apache
+- MySQL
+- PHP
