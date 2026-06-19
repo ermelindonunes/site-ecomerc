@@ -18,17 +18,18 @@ $userQueryResult = $userQuery->fetch();
 
 
 if($name = $userQueryResult['nome'] && $pwd = $userQueryResult['senha']){
+    session_start();
     $_SESSION['user'] = $name;
-    $_SESSION['accessLevel'] = $userlvl;
-    switch ($userlvl) {
+    $_SESSION['accessLevel'] = $userQueryResult['accesslevel'];
+    switch ($_SESSION['accessLevel']) {
         case 1:
-            header("location:clientPage.php");
+            header("location:clientePage.php");
             exit; 
         case 10:
-            header("location:home.html");
+            header("location:index.html");
             exit;
         default:
-            header("location:home.html");
+            header("location:index.html");
     }
 }
 
